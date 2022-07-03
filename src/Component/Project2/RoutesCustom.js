@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom/client";
 import {
-    BrowserRouter,
     Routes,
     Route,
 } from "react-router-dom";
@@ -8,17 +7,20 @@ import {
 import React from 'react'
 import Header from "./Header/Header";
 import ShowCart from "./Header/ShowCart";
+import Body from "./Body/Body";
 
-const Routes = () => {
+const CustomRouter = () => {
     return (
-        <BrowserRouter>
+       
             <Routes>
-                <Route path="/" element={<Header />}>
-                    <Route path="/cart" element={<ShowCart />} />
+                <Route >
+                {/* <Route exact path="/" element={<Body />} /> */}
+                    
+                    <Route exact path="/cart" element={<ShowCart />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+
     )
 }
 
-export default Routes
+export default CustomRouter

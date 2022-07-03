@@ -3,11 +3,13 @@ import "../../main.css";
 import "./body.css"
 import { Button, Card, Col, Row } from 'antd';
 import Products from '../product';
+import { useState } from 'react';
 const { Meta } = Card;
 
 
 
-const Body = () => {
+const Body = ({sendData}) => {
+
     return (
         <div className='container'>
            <h1 className='heading'> Our Items</h1>
@@ -26,7 +28,7 @@ const Body = () => {
                           <p>{item.description}</p>
                           <h4>price : Rs {item.price} <span className='light-del'><del>Rs {item.offer}</del></span></h4>
   
-                          <Button type='primary' className='btn'> Add to Cart</Button>
+                          <Button type='primary' className='btn' onClick={sendData}> Add to Cart</Button>
                           </div>
                       </Card>
                           )

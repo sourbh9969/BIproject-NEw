@@ -12,6 +12,7 @@
     padding: 1rem;
 }
 
-.cart_page {
+.cart_page,
+.logo {
     cursor: pointer;
 }
