@@ -1,0 +1,17 @@
+.header {
+    background-color: rgb(117, 117, 248);
+    color: aliceblue;
+    margin-bottom: 3rem;
+}
+
+.cart {
+    text-align: center;
+}
+
+.cart_content {
+    padding: 1rem;
+}
+
+.cart_page {
+    cursor: pointer;
+}
