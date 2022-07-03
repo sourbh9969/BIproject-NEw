@@ -16,7 +16,7 @@ function App() {
       setValue(value +1)
       // cartDAta.push(product)
       setCartDAta([...cartDAta,product])
-      console.log(cartDAta)
+      // console.log(cartDAta)
 
   }
   // console.log(cartDAta)

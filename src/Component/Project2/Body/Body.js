@@ -28,7 +28,7 @@ const Body = ({sendData}) => {
                           <p>{item.description}</p>
                           <h4>price : Rs {item.price} <span className='light-del'><del>Rs {item.offer}</del></span></h4>
   
-                          <Button type='primary' className='btn' onClick={sendData}> Add to Cart</Button>
+                          <Button type='primary' className='btn' onClick={() => sendData(item)}> Add to Cart</Button>
                           </div>
                       </Card>
                           )

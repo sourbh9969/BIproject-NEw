@@ -4,7 +4,10 @@ import "./Header.css";
 import "../../main.css"
 
 const ShowCart = ({cartDAta}) => {
-    console.log(cartDAta)
+    // console.log(cartDAta)
+    const filterItem = () => {
+        console.log("filter")
+    }
   return (
 <>
 <h1>Your Cart</h1>
@@ -13,16 +16,16 @@ const ShowCart = ({cartDAta}) => {
           console.log(item)
         return(
             <>
-              <div>
+              <div key={item.id} className="flex" style={{textAlign:"center"}}>
         <div>
-            {/* <img src={item.img}  /> */}
+            <img src={item.image} className="img" />
         </div>
         <div>
-            <h2></h2>
-            <p></p>
+            <h2>{item.name}</h2>
+            <p>{item.description}</p>
             <h3></h3>
         </div>
-        <div><Button className='btn'></Button></div>
+        <div><Button className='btn' onClick={filterItem}>Remove</Button></div>
     </div></>
         )
       })
