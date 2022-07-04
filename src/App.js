@@ -19,7 +19,7 @@ function App() {
       console.log(cartDAta)
 
   }
-  // console.log(cartDAta)
+  // console.log(cartDAta)  
   return (
   <>
    <BrowserRouter>
